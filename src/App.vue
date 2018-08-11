@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <search-header v-if="!$route.meta.noSearch" />
+    <router-view></router-view>
+    <foot/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import searchHeader from "@/components/header";
+import foot from "@/components/footer";
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    foot,
+    searchHeader
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 </style>

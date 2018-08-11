@@ -1,0 +1,86 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.guide-tag {
+    margin: 6px 0;
+    span {
+        font-size: 12px;
+        line-height: 19px;
+        color: #969696;
+        // float: left;
+        height: 20px;
+        padding: 0 8px;
+        margin-right: 5px;
+        border: 1px solid #d1d1d1;
+        border-radius: 2px;
+    }
+}
+
+.red {
+    color: #de2f4e;
+}
+
+.btn {
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid #ecebeb;
+    font-size: 12px;
+    height: auto!important;
+    line-height: 20px!important;
+    text-align: center;
+    border-radius: 5px;
+    &-active {
+        border: 1px solid #d8ac67;
+        color: #d8ac67;
+    }
+}
+
+.bbox {
+    box-sizing: border-box;
+}
+
+.broder-left {
+    padding-left: 10px;
+    border-left: 3px solid orange;
+}
+
+.clear-box {
+    clear: both;
+}
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.txt-center {
+    text-align: center;
+}
